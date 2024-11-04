@@ -1,0 +1,31 @@
+.logo-icon {
+  width: 60px;
+  height: 60px;
+  animation: rotateLogo 5s linear infinite;
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.moon-icon {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+}
+.moon-icon::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+}
