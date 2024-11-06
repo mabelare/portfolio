@@ -10,8 +10,8 @@
     <div class="container">
       <div class="logo-icon">
         <svg
-          width="100"
-          height="100"
+          width="60"
+          height="60"
           viewBox="0 0 100 100"
           xm1ns="http://www.w3.org/2000/svg"
         >
@@ -23,52 +23,81 @@
             stroke-width="2"
             fill="none"
           />
-
           <circle
             cx="50"
             cy="50"
             r="20"
             stroke="black"
-            stroke-width="1"
+            stroke-width="2"
             fill="none"
           />
 
           <text
             x="50"
-            y="53"
+            y="55"
             text-anchor="middle"
-            font-size="14"
             fill="black"
-            font-family="Arial, sans-serif"
+            font-size="15"
+            dy=".3em"
           >
-            XO
+            X.O
           </text>
 
-          <text
-            font-size="7"
-            fill="black"
-            font-family="Arial,
-          sans-serif"
-          >
-            <textPath
-              href="#text-path"
-              startOffset="50%"
-              text-anchor="middle"
-              letter-spacing="5"
-            >
-              ARE ALIYAH MABEL
+          <text x="50" y="55" text-anchor="middle" font-size="10" fill="black">
+            <textPath href="#text-path" start0ffset="0">
+              A R E A L I Y A H M A B E L
             </textPath>
           </text>
-
           <defs>
             <path
               id="text-path"
-              d="M 10,50 a 30,30 0 1,1 70,0
-        a 30,30 0 1,1 -60,0"
+              d="M 15,50 a 35,35 0 1,
+            1 70, 0 a 35,35 0 1, 1 -60,0"
             />
           </defs>
         </svg>
       </div>
+      <div class="moon-icon">
+        <svg
+          xm1ns="http://www.w3.org/2000/svg"
+          viewBox="0 0 64 64"
+          width="40"
+          height="50"
+        >
+          <circle cx="32" cy="32" r="32" fill="black" />
+          <path
+            d="M37 32 A12 12 0 1 1 27 32 A8 8 0 1 0 37 32"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            transform="rotate(-50 20 42 )"
+          />
+        </svg>
+      </div>
+
+      <div id="hamburger" class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+
+    <div class="images">
+      <img src="image/WhatsApp Image 2024-11-06 at 1.31.33 AM.jpeg" alt="" />
+    </div>
+
+    <div class="mabel">
+      <h1>Are Aliyah Mabel</h1>
+      <p>
+        With a rich 3-year journey in web development, I specialize in creating
+        exceptional web experiences. My expertise spans a variety of
+        technologies, ensuring verstaile solutions for diverse needs. From
+        dynamic interfaces to seamless interactions,i bring a creative touch to
+        every project. Let's collaborate to transform your ideas into impactful
+        web applications.Explore my portfolio to discover the diverse range of
+        projects that showcase my commitment to crafting engaging digital
+        experiences.
+      </p>
     </div>
 
     <script src="index.js"></script>
