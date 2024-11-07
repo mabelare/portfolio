@@ -1,7 +1,5 @@
-const hamburger = document.getElementById("hamburger");
-const menu = document.getElementById("menu");
-
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  menu.classList.toggle("active");
-});
+function toggleMenu() {
+  const overlayMenu = document.getElementById("overlayMenu");
+  overlayMenu.style.display =
+    overlayMenu.style.display === "block" ? "none" : "block";
+}
