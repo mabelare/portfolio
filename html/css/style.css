@@ -11,6 +11,7 @@ body {
   justify-content: space-between;
   padding: 10px 20px;
   background-color: #fff;
+
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -26,10 +27,12 @@ body {
 }
 .logo2 {
   width: 60px;
+  margin-left: 10px;
   height: 60px;
-  animation: zoom-roll 4s infinite;
+  animation: zoom-roll 4s linear infinite;
   transform-origin: center;
 }
+
 .icon {
   animation: zoom-roll 4s infinite;
   transform-origin: center;
@@ -58,7 +61,6 @@ body {
   background: black;
   margin: 5px 0;
 }
-
 img {
   margin-top: 25px;
   margin-left: 70px;
@@ -92,7 +94,8 @@ img {
 
 .icon {
   display: inline-flex;
-  margin-right: 10px;
+
+  margin-left: 15px;
 }
 .list {
   display: flex;
@@ -157,8 +160,12 @@ img {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .recent {
-  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 30px;
+}
+.recent1 {
+  margin-left: 10px;
 }
 .load-more {
   border: 1px solid black;
@@ -177,6 +184,9 @@ img {
     animation: zoom-roll 7s infinite;
     transform-origin: center;
     margin-bottom: 5px;
+  }
+  #skills-content1 {
+    display: none;
   }
 
   .moon-icon {
@@ -211,7 +221,7 @@ img {
   body::before {
     content: "FRONTEND DEVELOPER";
     position: absolute;
-    top: 47%;
+    top: 10%;
     left: 3%;
     transform: translate(-50% -50%);
     font-size: 65px;
@@ -279,6 +289,7 @@ img {
 
   .load-more {
     margin-left: 120px;
+    white-space: nowrap;
   }
   .reach-header {
     margin-top: 20px;
@@ -295,40 +306,48 @@ img {
     border-left: none;
     border-right: none;
   }
-
-  .b {
-    border: 1px solid black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    margin-top: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: grey;
-    border-radius: 6px;
-  }
-
-  .c {
+  #name {
     border: 1px solid black;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     margin-top: 20px;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-right: 5px;
     color: grey;
     border-radius: 6px;
+    font-size: 15px;
+    width: 90%;
   }
-  .d {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  #Email {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: grey;
+    border-radius: 6px;
+    width: 90%;
+    font-size: 15px;
+  }
+  #Message {
     border: 1px solid black;
     padding-top: 10px;
     padding-bottom: 90px;
     padding-left: 10px;
+    margin-left: 10px;
     margin-top: 20px;
-    margin-left: 5px;
     margin-right: 5px;
     color: grey;
     border-radius: 6px;
+    width: 90%;
+    font-size: 15px;
   }
 
   h4 {
@@ -359,6 +378,9 @@ img {
   .hamburger {
     display: none;
   }
+  #skills-content2 {
+    display: none;
+  }
 
   .rand {
     display: flex;
@@ -379,19 +401,199 @@ img {
     border: 1px solid black;
     margin-left: 30px;
     margin-right: 30px;
+    border-bottom: none;
   }
+
   .images {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row-reverse;
   }
   img {
-    width: 35%;
-    border: 1px solid black;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-right: 30px;
   }
   .mabel {
-    width: 70%;
+    width: 60%;
     font-size: 15px;
+    margin-left: 50px;
+    padding-right: 30px;
+    border-right: 1px solid black;
+  }
+  .mabel h2 {
+    white-space: nowrap;
+  }
+
+  .logo2 {
+    display: none;
+  }
+  .icon {
+    margin-right: 10px;
+  }
+  .over-all {
+    width: 90%;
+    margin-left: 40px;
+  }
+  .img2 img {
+    margin-left: 15px;
+  }
+
+  .img4 img {
+    margin-left: 15px;
+  }
+
+  .img5 img {
+    margin-left: 20px;
+  }
+  .img6 img {
+    margin-left: 15px;
+  }
+  .img7 img {
+    margin-left: 15px;
+  }
+
+  .img2 {
     border: 1px solid black;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .imgl {
+    display: flex;
+    flex-direction: column;
+    margin-left: 260px;
+    margin-top: -250px;
+  }
+
+  .img3 img {
+    margin-left: 15px;
+  }
+  .imgt {
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    margin-top: -240px;
+    font-size: 15px;
+  }
+
+  .img3 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .img4 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+  .img5 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .img6 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+  .img7 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .list {
+    display: flex;
+    gap: 10px;
+  }
+  .load-more {
+    margin-left: 270px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .footer {
+    border: 1px solid grey;
+  }
+  .rece {
+    border-left: 1px solid black;
+    margin-left: 350px;
+    margin-top: -260px;
+  }
+
+  .logo-icol {
+    margin-top: 200px;
+    margin-left: 130px;
+  }
+
+  #name {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: grey;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 90%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  #Email {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: grey;
+    border-radius: 6px;
+    width: 90%;
+    font-size: 15px;
+  }
+  #Message {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 90px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 5px;
+    color: grey;
+    border-radius: 6px;
+    width: 90%;
+    font-size: 15px;
+  }
+  h4 {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+  }
+
+  h5 {
+    display: flex;
+    justify-content: center;
+    color: grey;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 }
 
@@ -400,9 +602,13 @@ img {
   .hamburger {
     display: none;
   }
+  #skills-content2 {
+    display: none;
+  }
+
   .rand {
     display: flex;
-    gap: 130px;
+    gap: 150px;
   }
   .rand .till {
     border: 1px solid black;
@@ -414,6 +620,206 @@ img {
     padding: 7px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  body {
+    border: 1px solid black;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-bottom: none;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  img {
+    width: 30%;
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+  .mabel {
+    width: 60%;
+    font-size: 15px;
+    margin-left: 50px;
+    padding-right: 30px;
+    border-right: 1px solid black;
+    line-height: 40px;
+  }
+  .mabel h2 {
+    white-space: nowrap;
+    padding: 3px;
+  }
+
+  .logo2 {
+    display: none;
+  }
+  .icon {
+    margin-right: 10px;
+  }
+  .over-all {
+    width: 90%;
+    margin-left: 50px;
+  }
+  .img2 img {
+    margin-left: 15px;
+  }
+
+  .img4 img {
+    margin-left: 15px;
+  }
+
+  .img5 img {
+    margin-left: 20px;
+  }
+  .img6 img {
+    margin-left: 15px;
+  }
+  .img7 img {
+    margin-left: 15px;
+  }
+
+  .img2 {
+    border: 1px solid black;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .imgl {
+    display: flex;
+    flex-direction: column;
+    margin-left: 260px;
+    margin-top: -250px;
+  }
+
+  .img3 img {
+    margin-left: 15px;
+  }
+  .imgt {
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    margin-top: -240px;
+    font-size: 15px;
+  }
+
+  .img3 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .img4 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+  .img5 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .img6 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+  .img7 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .list {
+    display: flex;
+    gap: 10px;
+  }
+  .load-more {
+    margin-left: 270px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .footer {
+    border: 1px solid gray;
+  }
+  .rece {
+    border-left: 1px solid black;
+    margin-left: 440px;
+    margin-top: -260px;
+  }
+
+  .logo-icol {
+    margin-top: 200px;
+    margin-left: 130px;
+  }
+
+  #name {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: grey;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 90%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  #Email {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: grey;
+    border-radius: 6px;
+    width: 90%;
+    font-size: 15px;
+  }
+  #Message {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 90px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 5px;
+    color: grey;
+    border-radius: 6px;
+    width: 90%;
+    font-size: 15px;
+  }
+  h4 {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+  }
+
+  h5 {
+    display: flex;
+    justify-content: center;
+    color: grey;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 }
 
@@ -424,8 +830,10 @@ img {
   }
   .rand {
     display: flex;
-    gap: 180px;
+    gap: 150px;
+    font-size: 20px;
   }
+
   .rand .till {
     border: 1px solid black;
     background-color: black;
@@ -437,7 +845,216 @@ img {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  #skills-content2 {
+    display: none;
+  }
+  .skills-container {
+    font-size: 20px;
+  }
+
+  body {
+    border: 1px solid black;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-bottom: none;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  img {
+    width: 30%;
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+  .mabel {
+    width: 60%;
+    font-size: 25px;
+    margin-left: 50px;
+    padding-right: 30px;
+    border-right: 1px solid black;
+    line-height: 50px;
+  }
+  .mabel h2 {
+    white-space: nowrap;
+    padding: 3px;
+  }
+
+  .logo2 {
+    display: none;
+  }
+  .icon {
+    margin-right: 10px;
+  }
+  .over-all {
+    width: 90%;
+    margin-left: 60px;
+  }
+  .img2 img {
+    margin-left: 15px;
+  }
+
+  .img4 img {
+    margin-left: 15px;
+  }
+
+  .img5 img {
+    margin-left: 20px;
+  }
+  .img6 img {
+    margin-left: 15px;
+  }
+  .img7 img {
+    margin-left: 15px;
+  }
+
+  .img2 {
+    border: 1px solid black;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .imgl {
+    display: flex;
+    flex-direction: column;
+    margin-left: 360px;
+    margin-top: -250px;
+  }
+
+  .img3 img {
+    margin-left: 15px;
+  }
+  .imgt {
+    display: flex;
+    flex-direction: column;
+    margin-left: 360px;
+    margin-top: -240px;
+    font-size: 15px;
+  }
+
+  .img3 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .img4 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+  .img5 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .img6 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+  .img7 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .list {
+    display: flex;
+    gap: 10px;
+  }
+  .load-more {
+    margin-left: 450px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .footer {
+    border: 1px solid grey;
+  }
+  .rece {
+    border-left: 1px solid black;
+    margin-left: 590px;
+    margin-top: -260px;
+  }
+
+  .logo-icol {
+    margin-top: 200px;
+    margin-left: 190px;
+  }
+
+  #name {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: grey;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 90%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  #Email {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: grey;
+    border-radius: 6px;
+    width: 90%;
+    font-size: 15px;
+  }
+  #Message {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 90px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 5px;
+    color: grey;
+    border-radius: 6px;
+    width: 90%;
+    font-size: 15px;
+  }
+  h4 {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+  }
+
+  h5 {
+    display: flex;
+    justify-content: center;
+    color: grey;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
 }
+
 @media (min-width: 1301px) {
   .moon-icon,
   .hamburger {
@@ -446,6 +1063,7 @@ img {
   .rand {
     display: flex;
     gap: 240px;
+    font-size: 25px;
   }
   .rand .till {
     border: 1px solid black;
@@ -457,5 +1075,213 @@ img {
     padding: 7px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  #skills-content2 {
+    display: none;
+  }
+  .skills-container {
+    font-size: 20px;
+  }
+
+  body {
+    border: 1px solid black;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-bottom: none;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  img {
+    width: 35%;
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+  .mabel {
+    width: 60%;
+    font-size: 20px;
+    padding-left: 20px;
+    border-right: 1px solid black;
+    line-height: 50px;
+  }
+  .mabel h2 {
+    white-space: nowrap;
+    padding: 3px;
+  }
+
+  .logo2 {
+    display: none;
+  }
+  .icon {
+    margin-right: 10px;
+  }
+  .over-all {
+    width: 90%;
+    margin-left: 70px;
+  }
+  .img2 img {
+    margin-left: 15px;
+  }
+
+  .img4 img {
+    margin-left: 15px;
+  }
+
+  .img5 img {
+    margin-left: 20px;
+  }
+  .img6 img {
+    margin-left: 15px;
+  }
+  .img7 img {
+    margin-left: 15px;
+  }
+
+  .img2 {
+    border: 1px solid black;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+  .imgl {
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+    margin-top: -300px;
+  }
+
+  .img3 img {
+    margin-left: 15px;
+  }
+  .imgt {
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+    margin-top: -300px;
+    font-size: 15px;
+  }
+
+  .img3 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 90px;
+  }
+
+  .img4 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 70px;
+  }
+  .img5 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 90px;
+  }
+
+  .img6 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 90px;
+  }
+  .img7 {
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-bottom: 90px;
+  }
+
+  .list {
+    display: flex;
+    gap: 10px;
+  }
+  .load-more {
+    margin-left: 500px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .footer {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+  .rece {
+    border-left: 1px solid black;
+    margin-left: 700px;
+    margin-top: -260px;
+  }
+
+  .logo-icol {
+    margin-top: 200px;
+    margin-left: 190px;
+  }
+
+  #name {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: grey;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 90%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  #Email {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: grey;
+    border-radius: 6px;
+    width: 90%;
+    font-size: 15px;
+  }
+  #Message {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 90px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 5px;
+    color: grey;
+    border-radius: 6px;
+    width: 90%;
+    font-size: 15px;
+  }
+  h4 {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+  }
+
+  h5 {
+    display: flex;
+    justify-content: center;
+    color: grey;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 }
