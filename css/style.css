@@ -90,6 +90,9 @@ img {
   align-items: center;
   padding-right: 20px;
   margin-right: 10px;
+  border-right: 1px solid black;
+  margin-top: -20px;
+  margin-bottom: -17px;
 }
 
 .icon {
@@ -214,6 +217,9 @@ img {
   }
   .mabel p {
     font-size: 15px;
+  }
+  .mabel .p2 {
+    margin-top: -12px;
   }
   .mabel {
     margin-left: 10px;
